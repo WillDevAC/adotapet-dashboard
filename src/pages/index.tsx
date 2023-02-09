@@ -3,9 +3,7 @@ import { NextPage } from 'next/types';
 import { Home } from 'templates/Home';
 
 const HomePage: NextPage = () => {
-  return (
-    <Home/>
-  );
+  return <Home />;
 };
 
 export default HomePage;
