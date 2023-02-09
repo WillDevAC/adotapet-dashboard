@@ -1,61 +1,45 @@
 import styled from 'styled-components';
 
-import theme from 'styles/theme';
-
-export const CategoriesSpecies = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-
-  @media only screen and (max-width: ${theme.breakpoints.mobile}) {
+export const Form = styled.form`
+  button {
     width: 100%;
-    overflow-x: scroll;
-    white-space: nowrap;
-    gap: 2.5rem;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    background: #ec5161;
+    border-radius: 24px;
+    padding: 10px;
+    color: white;
+    border: #ec5161;
   }
-`;
-
-export const GridMain = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 2rem;
-  padding-top: 5rem;
-
-  @media only screen and (max-width: ${theme.breakpoints.mobile}) {
-    grid-template-columns: 1fr;
+  input {
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ec5161;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px;
   }
+  width: 100%;
 `;
 
-export const Content = styled.div`
+export const Divi = styled.div``;
+
+export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const Filters = styled.div`
+export const Box = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  z-index: 1;
-  position: sticky;
-  top: 8rem;
-  left: 0;
-  height: 40rem;
-  transition: 0.3s ease-in-out;
-`;
-
-export const InputSearchMobile = styled.input`
-  display: flex;
-  border: none;
-  height: 5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  width: 25%;
+  height: 50%;
   background-color: white;
-  border: 1px solid #e5e5e5;
-  color: gray;
-  font-size: 1.3rem;
-  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #ec5161;
+  border-radius: 10px;
+  padding: 2%;
 `;
