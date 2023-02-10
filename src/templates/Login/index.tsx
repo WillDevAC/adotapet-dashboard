@@ -1,6 +1,6 @@
 import * as S from './styles';
 
-export const Home = () => {
+export const Login = () => {
   return (
     <>
       <S.Container>
