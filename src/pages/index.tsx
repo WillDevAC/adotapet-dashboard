@@ -1,9 +1,9 @@
 import { NextPage } from 'next/types';
 
-import { Home } from 'templates/Home';
+import { Login } from 'templates/Login';
 
 const HomePage: NextPage = () => {
-  return <Home />;
+  return <Login />;
 };
 
 export default HomePage;
